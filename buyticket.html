@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="seats.css">
+    
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+
+  var countDownDate = new Date().getTime() + 300000; // 5 minutes in milliseconds
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="timer"
+  document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+setTimeout(function() {
+   window.location.reload(1);
+}, 300000); 
+setInterval(function() {
+   window.location.reload(1);
+}, 300000); 
+
+//-------------------------------------
+
+$(document).ready(function(){
+$(".res").click(function(){
+  alert("Your ticket is reserved.");
+});
+});
+
+$(document).ready(function(){
+  $("#but").click(function(){
+    $("#cinema").slideDown("slow");
+  });
+});
+
+$(document).ready(function(){
+  $(".chair11").click(function(){
+  $(".chair11").hide()
+  $(".chairb11").show();
+});
+});
+
+$(document).ready(function(){
+  $(".chairb11").click(function(){
+  $(".chair11").show()
+  $(".chairb11").hide();
+});
+});
+
+$(document).ready(function(){
+  $(".chair12").click(function(){
+  $(".chair12").hide()
+  $(".chairb12").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb12").click(function(){
+  $(".chair12").show()
+  $(".chairb12").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair13").click(function(){
+  $(".chair13").hide()
+  $(".chairb13").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb13").click(function(){
+  $(".chair13").show()
+  $(".chairb13").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair14").click(function(){
+  $(".chair14").hide()
+  $(".chairb14").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb14").click(function(){
+  $(".chair14").show()
+  $(".chairb14").hide();
+});
+});
+
+$(document).ready(function(){
+  $(".chair15").click(function(){
+  $(".chair15").hide()
+  $(".chairb15").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb15").click(function(){
+  $(".chair15").show()
+  $(".chairb15").hide();
+});
+});
+
+$(document).ready(function(){
+  $(".chair16").click(function(){
+  $(".chair16").hide()
+  $(".chairb16").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb16").click(function(){
+  $(".chair16").show()
+  $(".chairb16").hide();
+});
+});
+
+$(document).ready(function(){
+  $(".chair17").click(function(){
+  $(".chair17").hide()
+  $(".chairb17").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb17").click(function(){
+  $(".chair17").show()
+  $(".chairb17").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair18").click(function(){
+  $(".chair18").hide()
+  $(".chairb18").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb18").click(function(){
+  $(".chair18").show()
+  $(".chairb18").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair21").click(function(){
+  $(".chair21").hide()
+  $(".chairb21").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb21").click(function(){
+  $(".chair21").show()
+  $(".chairb21").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair22").click(function(){
+  $(".chair22").hide()
+  $(".chairb22").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb22").click(function(){
+  $(".chair22").show()
+  $(".chairb22").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair23").click(function(){
+  $(".chair23").hide()
+  $(".chairb23").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb23").click(function(){
+  $(".chair23").show()
+  $(".chairb23").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair24").click(function(){
+  $(".chair24").hide()
+  $(".chairb24").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb24").click(function(){
+  $(".chair24").show()
+  $(".chairb24").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair25").click(function(){
+  $(".chair25").hide()
+  $(".chairb25").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb25").click(function(){
+  $(".chair25").show()
+  $(".chairb25").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair26").click(function(){
+  $(".chair26").hide()
+  $(".chairb26").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb26").click(function(){
+  $(".chair26").show()
+  $(".chairb26").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair27").click(function(){
+  $(".chair27").hide()
+  $(".chairb27").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb27").click(function(){
+  $(".chair27").show()
+  $(".chairb27").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair28").click(function(){
+  $(".chair28").hide()
+  $(".chairb28").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb28").click(function(){
+  $(".chair28").show()
+  $(".chairb28").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair31").click(function(){
+  $(".chair31").hide()
+  $(".chairb31").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb31").click(function(){
+  $(".chair31").show()
+  $(".chairb31").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair32").click(function(){
+  $(".chair32").hide()
+  $(".chairb32").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb32").click(function(){
+  $(".chair32").show()
+  $(".chairb32").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair33").click(function(){
+  $(".chair33").hide()
+  $(".chairb33").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb33").click(function(){
+  $(".chair33").show()
+  $(".chairb33").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair34").click(function(){
+  $(".chair34").hide()
+  $(".chairb34").show();
+});
+$(document).ready(function(){
+  $(".chairb34").click(function(){
+  $(".chair34").show()
+  $(".chairb34").hide();
+});
+});
+});$(document).ready(function(){
+  $(".chair35").click(function(){
+  $(".chair35").hide()
+  $(".chairb35").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb35").click(function(){
+  $(".chair35").show()
+  $(".chairb35").hide();
+});
+});
+
+$(document).ready(function(){
+  $(".chair36").click(function(){
+  $(".chair36").hide()
+  $(".chairb36").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb36").click(function(){
+  $(".chair36").show()
+  $(".chairb36").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair37").click(function(){
+  $(".chair37").hide()
+  $(".chairb37").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb37").click(function(){
+  $(".chair37").show()
+  $(".chairb37").hide();
+});
+});
+$(document).ready(function(){
+  $(".chair38").click(function(){
+  $(".chair38").hide()
+  $(".chairb38").show();
+});
+});
+$(document).ready(function(){
+  $(".chairb38").click(function(){
+  $(".chair38").show()
+  $(".chairb38").hide();
+});
+});
+
+$(document).ready(function(){
+  $("#vip11").click(function(){
+  $("#vip11").hide()
+  $("#vipb11").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb11").click(function(){
+  $("#vip11").show()
+  $("#vipb11").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip12").click(function(){
+  $("#vip12").hide()
+  $("#vipb12").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb12").click(function(){
+  $("#vip12").show()
+  $("#vipb12").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip13").click(function(){
+  $("#vip13").hide()
+  $("#vipb13").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb13").click(function(){
+  $("#vip13").show()
+  $("#vipb13").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip14").click(function(){
+  $("#vip14").hide()
+  $("#vipb14").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb14").click(function(){
+  $("#vip14").show()
+  $("#vipb14").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip15").click(function(){
+  $("#vip15").hide()
+  $("#vipb15").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb15").click(function(){
+  $("#vip15").show()
+  $("#vipb15").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip21").click(function(){
+  $("#vip21").hide()
+  $("#vipb21").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb21").click(function(){
+  $("#vip21").show()
+  $("#vipb21").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip22").click(function(){
+  $("#vip22").hide()
+  $("#vipb22").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb22").click(function(){
+  $("#vip22").show()
+  $("#vipb22").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip23").click(function(){
+  $("#vip23").hide()
+  $("#vipb23").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb23").click(function(){
+  $("#vip23").show()
+  $("#vipb23").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip24").click(function(){
+  $("#vip24").hide()
+  $("#vipb24").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb24").click(function(){
+  $("#vip24").show()
+  $("#vipb24").hide();
+});
+});
+$(document).ready(function(){
+  $("#vip25").click(function(){
+  $("#vip25").hide()
+  $("#vipb25").show();
+});
+});
+$(document).ready(function(){
+  $("#vipb25").click(function(){
+  $("#vip25").show()
+  $("#vipb25").hide();
+});
+});
+
+
+</script>
+
+<body>
+  <div class="tail-top">
+    <div class="tail-bottom">
+      <div id="main">
+        <div id="header">
+          <div class="row-1">
+            <div class="fleft"><a>Cinema <span>World</span></a></div>
+            <ul>
+              <li><a href="index.html"><img src="images/icon1.gif"  /></a></li>
+            <li><a href="contact-us.html"><img src="images/icon2.gif"/></a></li>
+            <li><a href="buyticket.html"><img src="images/icon3-act.gif"  /></a></li>
+            </ul>
+          </div>
+          <div class="row-2">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="offers.html">Offers</a></li>
+              <li ><a href="activities.html">Activities</a></li>
+              <li><a href="buyticket.html">Buy Ticket</a></li>
+              <li class="last"><a href="Login.html">login</a></li>
+            </ul>
+          </div>
+        </div>
+  
+
+
+  <div class=" form">
+    <p id="timer"></p>
+    <div class="location">
+      <label for="loc">Choose cinema location:</label>
+           <select name="loc" id="loc">
+   
+             <option value="Cinema A">Cinema A</option>
+             <option value="cenima B">Cinema B</option>
+             <option value="cinema C">Cinema C</option>
+         </select>
+    </div>
+
+     
+   <div class="time" >
+      <label for="tim">Choose time:</label>
+        <select name="tim" id="tim">
+ 
+         <option value="time a">Time A</option>
+         <option value="time b">Time B</option>
+         <option value="time c">Time C</option>
+        </select>
+    </div>
+    <div class="ticket">
+      <form action="/action_page.php">
+        <label for="quantity">Choose ticket (between 1 and 10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10">
+      </form>
+      <br>
+      <br>
+      <br>
+      <div class="type">
+      <label for="type">Ticket Type:</label>
+        <select name="typ" id="typ">
+ 
+         <option value="Normal">Normal</option>
+         <option value="VIP">Vip</option>
+         
+        </select>
+      </div>
+
+    </div>
+     <div class="butn">
+       <button id="but">Choose seat</button>
+     </div>
+
+    
+
+    </div>
+
+
+    <div id="cinema" >
+        <div class="screen">
+          <br>
+          <br>
+            SCREEN
+        </div>
+
+        <div class="rowex">
+            <li>
+                   <div class="ex">
+                    <img src="images/seat-empty.png"  height="50" width="50">
+                  </div>
+                   <h4> Available</h4>
+                   <div class="ex">
+                    <img src="images/seat-sold.png"  height="50" width="50">
+                  </div>
+                  <h4>sold</h4>
+                   <div class="ex">
+                    <img src="images/seat-booked.png"  height="50" width="50">
+                  </div>
+                   <h4> Your seat</h4>   
+             </li>
+             <div class="title">
+              <h4>VIP</h4>
+              <br>
+            </div>  
+             <li> 
+              <div class="ex">
+               <img src="images/vip-av.png" height="50" width="50">
+                 </div>
+              <h4> Available</h4>
+              <div class="ex">
+               <img src="images/vip.png" height="50" width="50">
+             </div>
+             <h4>sold</h4>
+              <div class="ex">
+               <img src="images/vip-ur.png" height="50" width="50">
+             </div>
+              <h4> Your seat</h4>   
+        </li>        
+         </div>
+        
+        <div class="row">
+           <li>
+                  <div class="ch">
+                    <input type="image" src="images/seat-empty.png" name="1"  class="chair11"/>
+                    <input type="image" src="images/seat-booked.png" name="1"  class="chairb11" style="display: none;" />   
+                  </div>
+                  <div class="ch">
+                    <input type="image" src="images/seat-empty.png" name="1"  class="chair12"/>
+                    <input type="image" src="images/seat-booked.png" name="1"  class="chairb12" style="display: none;" />
+                  </div>
+                  <div class="ch">
+                    <input type="image" src="images/seat-empty.png" name="1"  class="chair13"/>
+                    <input type="image" src="images/seat-booked.png" name="1"  class="chairb13" style="display: none;" />
+                  </div>
+                  <div class="ch">
+                    <input type="image" src="images/seat-empty.png" name="1"  class="chair14"/>
+                    <input type="image" src="images/seat-booked.png" name="1"  class="chairb14" style="display: none;" />
+                  </div>
+                  <div class="ch">
+                    <input type="image" src="images/seat-empty.png" name="1"  class="chair15"/>
+                    <input type="image" src="images/seat-booked.png" name="1"  class="chairb15" style="display: none;" />
+                  </div>
+                  <div class="ch">
+                    <input type="image" src="images/seat-empty.png" name="1"  class="chair16"/>
+                    <input type="image" src="images/seat-booked.png" name="1"  class="chairb16" style="display: none;" />
+                  </div>
+                  <div class="ch">
+                    <input type="image" src="images/seat-empty.png" name="1"  class="chair17"/>
+                    <input type="image" src="images/seat-booked.png" name="1"  class="chairb17" style="display: none;" />
+                  </div>
+                  <div class="ch">
+                    <input type="image" src="images/seat-empty.png" name="1"  class="chair18"/>
+                    <input type="image" src="images/seat-booked.png" name="1"  class="chairb18" style="display: none;" />
+                  </div>
+            </li>         
+        </div>
+        <div class="row">
+            <li>
+              <div class="ch" >
+                <input type="image" src="images/seat-empty.png" name="1"  class="chair21"/>
+                <input type="image" src="images/seat-booked.png" name="1"  class="chairb21" style="display: none;" />   
+              </div>
+              <div class="ch">
+                <input type="image" src="images/seat-empty.png" name="1"  class="chair22"/>
+                <input type="image" src="images/seat-booked.png" name="1"  class="chairb22" style="display: none;" />
+              </div>
+              <div class="ch">
+                <input type="image" src="images/seat-empty.png" name="1"  class="chair23"/>
+                <input type="image" src="images/seat-booked.png" name="1"  class="chairb23" style="display: none;" />
+              </div>
+              <div class="ch">
+                <input type="image" src="images/seat-empty.png" name="1"  class="chair24"/>
+                <input type="image" src="images/seat-booked.png" name="1"  class="chairb24" style="display: none;" />
+              </div>
+              <div class="ch">
+                <input type="image" src="images/seat-empty.png" name="1"  class="chair25"/>
+                <input type="image" src="images/seat-booked.png" name="1"  class="chairb25" style="display: none;" />
+              </div>
+              <div class="ch">
+                <input type="image" src="images/seat-empty.png" name="1"  class="chair26"/>
+                <input type="image" src="images/seat-booked.png" name="1"  class="chairb26" style="display: none;" />
+              </div>
+              <div class="ch">
+                <input type="image" src="images/seat-empty.png" name="1"  class="chair27"/>
+                <input type="image" src="images/seat-booked.png" name="1"  class="chairb27" style="display: none;" />
+              </div>
+              <div class="ch">
+                <input type="image" src="images/seat-empty.png" name="1"  class="chair28"/>
+                <input type="image" src="images/seat-booked.png" name="1"  class="chairb28" style="display: none;" />
+              </div>
+             </li>         
+         </div>
+         <div class="row">
+          <li>
+            <div class="ch">
+              <input type="image" src="images/seat-empty.png" name="1"  class="chair31"/>
+              <input type="image" src="images/seat-booked.png" name="1"  class="chairb31" style="display: none;" />   
+            </div>
+            <div class="ch">
+              <input type="image" src="images/seat-empty.png" name="1"  class="chair32"/>
+              <input type="image" src="images/seat-booked.png" name="1"  class="chairb32" style="display: none;" />
+            </div>
+            <div class="ch">
+              <input type="image" src="images/seat-empty.png" name="1"  class="chair33"/>
+              <input type="image" src="images/seat-booked.png" name="1"  class="chairb33" style="display: none;" />
+            </div>
+            <div class="ch">
+              <input type="image" src="images/seat-empty.png" name="1"  class="chair34"/>
+              <input type="image" src="images/seat-booked.png" name="1"  class="chairb34" style="display: none;" />
+            </div>
+            <div class="ch">
+              <input type="image" src="images/seat-empty.png" name="1"  class="chair35"/>
+              <input type="image" src="images/seat-booked.png" name="1"  class="chairb35" style="display: none;" />
+            </div>
+            <div class="ch">
+              <input type="image" src="images/seat-empty.png" name="1"  class="chair36"/>
+              <input type="image" src="images/seat-booked.png" name="1"  class="chairb36" style="display: none;" />
+            </div>
+            <div class="ch">
+              <input type="image" src="images/seat-empty.png" name="1"  class="chair37"/>
+              <input type="image" src="images/seat-booked.png" name="1"  class="chairb37" style="display: none;" />
+            </div>
+            <div class="ch">
+              <input type="image" src="images/seat-empty.png" name="1"  class="chair38"/>
+              <input type="image" src="images/seat-booked.png" name="1"  class="chairb38" style="display: none;" />
+            </div>
+           </li>         
+           <div class="rowv">
+            <li>
+              <div class="ch">
+                <input type="image" src="images/vip-av.png" name="1"  id="vip11" class="vip"/>
+                <input type="image" src="images/vip-ur.png" name="1"  id="vipb11" class="vipb" style="display: none;" />   
+              </div>
+              <div class="ch">
+                <input type="image" src="images/vip-av.png" name="1"  id="vip12" class="vip"/>
+                <input type="image" src="images/vip-ur.png" name="1"  id="vipb12" class="vipb"style="display: none;" />  
+              </div>
+              <div class="ch">
+                <input type="image" src="images/vip-av.png" name="1"  id="vip13" class="vip"/>
+                <input type="image" src="images/vip-ur.png" name="1"  id="vipb13" class="vipb"style="display: none;" />  
+              </div>
+              <div class="ch">
+                <input type="image" src="images/vip-av.png" name="1"  id="vip14" class="vip"/>
+                <input type="image" src="images/vip-ur.png" name="1"  id="vipb14" class="vipb" style="display: none;" />  
+              </div>
+              <div class="ch">
+                <input type="image" src="images/vip-av.png" name="1"  id="vip15" class="vip"/>
+                <input type="image" src="images/vip-ur.png" name="1"  id="vipb15" class="vipb" style="display: none;" />  
+              </div>
+             </li>         
+         </div>
+     <div class="rowv">
+      <li>
+        <div class="ch">
+          <input type="image" src="images/vip-av.png" name="1"  id="vip21" class="vip"/>
+          <input type="image" src="images/vip-ur.png" name="1"  id="vipb21"class="vipb"  style="display: none;" />   
+        </div>
+        <div class="ch">
+          <input type="image" src="images/vip-av.png" name="1"  id="vip22" class="vip"/>
+          <input type="image" src="images/vip-ur.png" name="1"  id="vipb22" class="vipb"style="display: none;" />  
+        </div>
+        <div class="ch">
+          <input type="image" src="images/vip-av.png" name="1"  id="vip23" class="vip"/>
+          <input type="image" src="images/vip-ur.png" name="1"  id="vipb23" class="vipb" style="display: none;" />  
+        </div>
+        <div class="ch">
+          <input type="image" src="images/vip-av.png" name="1"  id="vip24" class="vip"/>
+          <input type="image" src="images/vip-ur.png" name="1"  id="vipb24" class="vipb" style="display: none;" />  
+        </div>
+        <div class="ch">
+          <input type="image" src="images/vip-av.png" name="1"  id="vip25" class="vip"/>
+          <input type="image" src="images/vip-ur.png" name="1"  id="vipb25" class="vipb" style="display: none;" />  
+        </div>
+       </li>
+   </div>
+
+   <div>
+    <button class="res"><a href="index.html">Reserve Ticket</a> </button>
+   
+   </div>
+   <br>
+   <br>
+   </div>
+   </div>
+   <div id="footer">
+    <div class="left">
+      <div class="right">
+        <div class="footerlink">
+          <p class="lf">Copyright &copy; 2022 - All Rights Reserved</p>
+          <p class="cf"><a href="contact-us.html">contact us</a></p>
+          <p class="rf"> <a href="about-us.html">Design by</a></p>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript"> Cufon.now(); </script>
+
+
+   
+
+       
+    
+    
+</body>
+</html>
