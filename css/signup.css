@@ -1,0 +1,21 @@
+
+div 
+{
+    text-align: center;
+}
+ 
+.box{
+    margin-top: 200px;
+    width: 40%;
+    margin-left: 35%;
+    border-color: rgb(166, 166, 166);
+    border-style: solid;
+}
+button{
+   width: 20%;
+   background-color:blue;
+}
+.register{
+    text-decoration: none;
+    color: white;
+}
